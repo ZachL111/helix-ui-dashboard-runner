@@ -1,0 +1,73 @@
+{
+  "repo": "helix-ui-dashboard-runner",
+  "language": "Lua",
+  "category": "Frontend apps",
+  "goal": "Develop a Lua command-oriented project for dashboard scenarios with node-edge fixtures, cycle and reachability reports, and no production deployment claims.",
+  "review_model": {
+    "terms": [
+      "view drift",
+      "state pressure",
+      "layout risk",
+      "interaction cost"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "view drift",
+      "signal": 55,
+      "slack": 53,
+      "drag": 9,
+      "confidence": 89,
+      "score": 225,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "state pressure",
+      "signal": 65,
+      "slack": 22,
+      "drag": 21,
+      "confidence": 56,
+      "score": 145,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "layout risk",
+      "signal": 84,
+      "slack": 28,
+      "drag": 10,
+      "confidence": 72,
+      "score": 238,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "interaction cost",
+      "signal": 64,
+      "slack": 48,
+      "drag": 11,
+      "confidence": 76,
+      "score": 219,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "view drift",
+      "signal": 89,
+      "slack": 50,
+      "drag": 20,
+      "confidence": 52,
+      "score": 220,
+      "lane": "ship"
+    }
+  ]
+}
