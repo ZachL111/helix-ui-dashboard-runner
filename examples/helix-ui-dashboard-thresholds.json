@@ -1,0 +1,17 @@
+{
+  "repo": "helix-ui-dashboard-runner",
+  "thresholds": {
+    "signal": 4,
+    "slack": 2,
+    "confidence": 2,
+    "drag": 2,
+    "ship": 166,
+    "watch": 99
+  },
+  "terms": [
+    "view drift",
+    "state pressure",
+    "layout risk",
+    "interaction cost"
+  ]
+}
